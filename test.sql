@@ -108,7 +108,8 @@ where
  
 
 -- Write a query to create a non-clustered index on the sales table to improve query performance for queries filtering by artwork_id.
- create NONCLUSTERED index IX_Fliteringaetwork_id;
+  create NONCLUSTERED index IX_Fliteringaetwork_id;
+ on artworks[artwork_id];
 
 
 -- Write a query to display artists who have artworks in multiple genres.
